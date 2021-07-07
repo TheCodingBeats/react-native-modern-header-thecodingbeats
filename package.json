@@ -1,18 +1,13 @@
 {
   "author": {
-    "name": "The Coding Beating",
+    "name": "The Coding Beats",
     "email": "thecodingbeats@gmail.com"
   },
   "bugs": {
     "url": "https://github.com/TheCodingBeats/react-native-modern-header-thecodingbeats/issues"
   },
   "description": "Fully customizable Modern Header View for React Native With The Coding Beats",
-  "homepage": "https://www.thecodingbeats.com",
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
+  "homepage": "https://github.com/TheCodingBeats/react-native-modern-header-thecodingbeats",
   "keywords": [
     "modern",
     "header",
@@ -29,30 +24,14 @@
     "rn"
   ],
   "license": "MIT",
-  "lint-staged": {
-    "./src/*.{js,jsx,ts,tsx}": [
-      "npx prettier --write",
-      "eslint src/*.js --fix-dry-run"
-    ]
-  },
   "main": "./build/dist/ModernHeader.js",
   "name": "react-native-modern-header-thecodingbeats",
-  "peerDependencies": {
-    "react": ">= 16.x.x",
-    "react-native": ">= 0.55.x",
-    "react-native-vector-icons": ">= 7.0.0",
-    "react-native-dynamic-vector-icons": ">= 1.0.0"
-  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/TheCodingBeats/react-native-modern-header-thecodingbeats.git"
   },
   "scripts": {
-    "build": "cd lib && tsc && cp ../package.json ../build/dist/ && Echo Build completed!",
-    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
-    "lint": "tslint -p tsconfig.json",
-    "postversion": "git push && git push --tags",
-    "version": "npm run format && git add -A src"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "1.0.0"
+  "version": "1.0.1"
 }
